@@ -5,22 +5,22 @@ This CUDA-based password cracker performs brute-force attacks on SHA1, SHA256 an
 
 nvcc -O3 -arch=sm_52 -o pwcrk yourfilename.cu pwcrk-sha256
 
-This will produce a binary called password_cracker.
+This will produce a binary called pwcrk.
 
 # Usage
 
 The binary takes in a hex-encoded SHA1 or MD5 hash and attempts to brute-force it:
 bash
 
-./password_cracker <hash_value> <password_length> <hash_type>
+./pwcrk <hash_value> <password_length> <hash_type>
 
 Example (SHA1 hash for abc123 = 6367c48dd193d56ea7b0baad25b19455e529f5ee):
 
-./password_cracker 6367c48dd193d56ea7b0baad25b19455e529f5ee 6 sha1
+./pwcrk 6367c48dd193d56ea7b0baad25b19455e529f5ee 6 sha1
 
 For MD5:
 
-./password_cracker e99a18c428cb38d5f260853678922e03 6 md5
+./pwcrk e99a18c428cb38d5f260853678922e03 6 md5
 
 
 # License

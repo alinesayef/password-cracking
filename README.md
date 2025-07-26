@@ -18,7 +18,7 @@ Example (SHA1 hash for abc123 = 6367c48dd193d56ea7b0baad25b19455e529f5ee):
 
 ./password_cracker 6367c48dd193d56ea7b0baad25b19455e529f5ee 6 sha1
 
-For MD5 (if enabled and supported in your code):
+For MD5:
 
 ./password_cracker e99a18c428cb38d5f260853678922e03 6 md5
 
